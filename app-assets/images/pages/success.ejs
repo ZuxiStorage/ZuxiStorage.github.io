@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="shortcut icon" href="http://cdn.hyperv.one/favicon.ico">
+        <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+        <link type="text/css" rel="stylesheet" href="https://cdn.hyperv.one/assets/CSS/filestyle.css">
+        <title>Success Key Generated</title>
+        <meta property="og:image" content="https://cdn.hyperv.one/assets/img/Logo.png">
+        <meta property="og:description" content="Success">
+        <meta property="og:title" content="Success">
+    </head>
+    <body>
+        <div class="rain front-row"></div>
+        <div class="rain back-row"></div>
+       
+        <audio id="player" loop>
+            <source src="https://cdn.hyperv.one/assets/media/AfterDark.mp3" type="audio/mp3">
+        </audio>
+        <script>
+            var vAudio = document.getElementById("player");
+            vAudio.volume = 0.3;
+            var hasInit = false;
+            function playMusic()
+            {
+               console.log(vAudio.ended)
+               if(!hasInit)
+               {
+                   hasInit = true;
+                   vAudio.play();
+               }
+            }
+         </script>
+
+        
+        <script type="text/javascript" src="https://cdn.hyperv.one/assets/JS/rain.js"></script>
+
+         <div class="single-toggle toggle"></div>
+        
+        <div id="images" class="ontop">
+            <a target="_blank" onmouseenter="playMusic()" title="Welcome ">
+
+            </div></a>
+
+
+            <div id="images" class="lower">
+              <a href="https://hyperv.one" target="_blank" onmouseenter="playMusic()" title="HMMM WHATS THIS">
+                Your license key is below
+              </div></a>
+        <div id="images" class="lower">
+            <a target="_blank" onmouseenter="playMusic()" title="HMMM WHATS THIS">
+              <%= license%>
+            </div></a>
+
+            <div id="images" class="lower">
+              <a href="https://dl.galaxyvrc.xyz" target="_blank" onmouseenter="playMusic()" title="HMMM WHATS THIS">
+               Click Me For Download
+              </div></a>
+  
+                    
+    <footer>
+        <p>&copy; 2022 HyperVoid Labs</p>
+    </footer>
+</html>
+
